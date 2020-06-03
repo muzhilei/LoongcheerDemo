@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/initAdLC"
+            android:textSize="18sp"
+            android:text="初始化Loongcheer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/initGDPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="GDPR隐私政策"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/InterstitialAd"
+            android:textSize="20sp"
+            android:text="插屏广告"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:text="load"
+                android:textColor="@android:color/black"
+                android:id="@+id/loadInterstitiaAd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/showInterstitiaAd"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="show"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/RewardedAd"
+            android:textSize="20sp"
+            android:text="激励广告"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:text="load"
+                android:textColor="@android:color/black"
+                android:id="@+id/loadRewarded"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/showRewarded"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="show"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/BannerAd"
+            android:textSize="20sp"
+            android:text="Banner广告"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:text="load"
+                android:textColor="@android:color/black"
+                android:id="@+id/loadBanner"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/showBanner"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="show"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="Ready"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:id="@+id/btn_isready"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="desc"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--    <com.mintegral.msdk.out.MTGBannerView-->
+    <!--        android:id="@+id/mintegral_banner_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"/>-->
+
+    <FrameLayout
+        android:id="@+id/adview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+
+</LinearLayout>
+</ScrollView>

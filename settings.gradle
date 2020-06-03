@@ -1,0 +1,8 @@
+rootProject.name='LoongcheerDemo'
+include ':app'
+include ':core'
+include ':interstitial'
+include ':network'
+include ':network_base'
+include ':reworkvideo'
+include ':banner'
